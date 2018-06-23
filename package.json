@@ -1,0 +1,23 @@
+{
+  "name": "level-concat-iterator",
+  "version": "0.0.0",
+  "description": "Concatenate items from an iterator into an array.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test"
+  },
+  "keywords": [
+    "concatenate",
+    "iterator",
+    "array"
+  ],
+  "author": "Lars-Magnus Skog <ralphtheninja@riseup.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^11.0.1",
+    "tape": "^4.9.1"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
