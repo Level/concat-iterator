@@ -3,7 +3,7 @@ module.exports = function (iterator, cb) {
   var next = function () {
     iterator.next(function (err, key, value) {
       if (err) return cb(err)
-      if (!arguments.length) {
+      if (key === undefined && value === undefined) {
         return iterator.end(function (err) {
           cb(err, data)
         })
