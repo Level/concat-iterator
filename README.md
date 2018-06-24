@@ -29,9 +29,9 @@ db.open(function () {
 
 ## API
 
-### `concat(iterator[, nextTick], cb)`
+### `concat(iterator, cb)`
 
-Takes an `abstract-leveldown` compatible `iterator` as first parameter and calls back with an array of keys and values. Second parameter is an optional function for handling `nextTick`, which defaults to `process.nextTick`. Calls back with an error if `iterator.next(cb)` or `iterator.end(cb)` errors.
+Takes an `abstract-leveldown` compatible `iterator` as first parameter and calls back with an array of keys and values. Calls back with an error if `iterator.next(cb)` or `iterator.end(cb)` errors.
 
 ## Contributing
 

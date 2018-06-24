@@ -101,20 +101,3 @@ test('calls back with error and partial data if iterator.end errors', function (
     t.same(result, [].concat(data[0]))
   })
 })
-
-test('supports custom nextTick', function (t) {
-  t.plan(2)
-
-  var iterator = {
-    next: function (cb) {
-      process.nextTick(cb, null, 'key', 'value')
-    }
-  }
-
-  function nextTick (next) {
-    t.is(typeof next, 'function', 'next is a function')
-    t.pass('custom nextTick called')
-  }
-
-  collect(iterator, nextTick, function () {})
-})
