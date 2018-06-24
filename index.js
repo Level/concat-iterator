@@ -1,8 +1,4 @@
-module.exports = function (iterator, nextTick, cb) {
-  if (typeof cb !== 'function') {
-    cb = nextTick
-    nextTick = process.nextTick
-  }
+module.exports = function (iterator, cb) {
   var data = []
   var next = function () {
     iterator.next(function (err, key, value) {
@@ -13,7 +9,7 @@ module.exports = function (iterator, nextTick, cb) {
         })
       }
       data.push({ key: key, value: value })
-      nextTick(next)
+      next()
     })
   }
   next()
