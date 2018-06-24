@@ -6,6 +6,11 @@
   "scripts": {
     "test": "standard && node test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Level/concat-iterator.git"
+  },
+  "homepage": "https://github.com/Level/concat-iterator",
   "keywords": [
     "concatenate",
     "iterator",
