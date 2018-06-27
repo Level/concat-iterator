@@ -7,7 +7,7 @@ test('calls back with error if iterator.next errors', function (t) {
   var iterator = {
     next: function (cb) {
       t.pass('iterator.next called')
-      process.nextTick(cb, new Error('dude'))
+      process.nextTick(cb, new Error('iterator.next'))
     },
     end: function (cb) {
       t.pass('iterator.end called')
@@ -16,7 +16,7 @@ test('calls back with error if iterator.next errors', function (t) {
   }
 
   collect(iterator, function (err) {
-    t.is(err.message, 'dude', 'correct error')
+    t.is(err.message, 'iterator.next', 'correct error')
   })
 })
 
@@ -72,12 +72,12 @@ test('calls back with error and data if iterator.end errors', function (t) {
     },
     end: function (cb) {
       t.pass('iterator.end called')
-      process.nextTick(cb, new Error('foo'))
+      process.nextTick(cb, new Error('iterator.end'))
     }
   }
 
   collect(iterator, function (err, result) {
-    t.is(err.message, 'foo', 'correct error')
+    t.is(err.message, 'iterator.end', 'correct error')
     t.same(result, data)
   })
 })
