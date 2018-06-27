@@ -2,11 +2,16 @@ var test = require('tape')
 var collect = require('.')
 
 test('calls back with error if iterator.next errors', function (t) {
-  t.plan(1)
+  t.plan(3)
 
   var iterator = {
     next: function (cb) {
+      t.pass('iterator.next called')
       process.nextTick(cb, new Error('dude'))
+    },
+    end: function (cb) {
+      t.pass('iterator.end called')
+      process.nextTick(cb)
     }
   }
 
@@ -16,7 +21,7 @@ test('calls back with error if iterator.next errors', function (t) {
 })
 
 test('happy path calls back with an array', function (t) {
-  t.plan(2)
+  t.plan(6)
 
   var i = 0
   var data = [
@@ -26,6 +31,7 @@ test('happy path calls back with an array', function (t) {
 
   var iterator = {
     next: function (cb) {
+      t.pass('iterator.next called')
       if (i < data.length) {
         process.nextTick(cb, null, data[i].key, data[i].value)
         ++i
@@ -34,6 +40,7 @@ test('happy path calls back with an array', function (t) {
       }
     },
     end: function (cb) {
+      t.pass('iterator.end called')
       process.nextTick(cb)
     }
   }
@@ -45,7 +52,7 @@ test('happy path calls back with an array', function (t) {
 })
 
 test('calls back with error and data if iterator.end errors', function (t) {
-  t.plan(2)
+  t.plan(6)
 
   var i = 0
   var data = [
@@ -55,6 +62,7 @@ test('calls back with error and data if iterator.end errors', function (t) {
 
   var iterator = {
     next: function (cb) {
+      t.pass('iterator.next called')
       if (i < data.length) {
         process.nextTick(cb, null, data[i].key, data[i].value)
         ++i
@@ -63,6 +71,7 @@ test('calls back with error and data if iterator.end errors', function (t) {
       }
     },
     end: function (cb) {
+      t.pass('iterator.end called')
       process.nextTick(cb, new Error('foo'))
     }
   }
@@ -74,7 +83,7 @@ test('calls back with error and data if iterator.end errors', function (t) {
 })
 
 test('calls back with error and partial data if iterator.end errors', function (t) {
-  t.plan(2)
+  t.plan(5)
 
   var i = 0
   var data = [
@@ -84,6 +93,7 @@ test('calls back with error and partial data if iterator.end errors', function (
 
   var iterator = {
     next: function (cb) {
+      t.pass('iterator.next called')
       if (i === 0) {
         process.nextTick(cb, null, data[i].key, data[i].value)
         i++
@@ -92,6 +102,7 @@ test('calls back with error and partial data if iterator.end errors', function (
       }
     },
     end: function (cb) {
+      t.pass('iterator.end called')
       process.nextTick(cb, new Error('foo'))
     }
   }
