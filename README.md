@@ -25,6 +25,8 @@ level('DB', function (err, db) {
 })
 ```
 
+**If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md).
+
 ## API
 
 ### `concat(iterator, cb)`

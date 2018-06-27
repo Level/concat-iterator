@@ -14,6 +14,7 @@
 
 ### Added
 * Add `homepage` and `repository` to `package.json` (@ralphtheninja)
+* Add `UPGRADING.md` (@ralphtheninja)
 
 ## 1.0.0 - 2018-06-24
 
