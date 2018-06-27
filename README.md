@@ -14,12 +14,10 @@
 
 ```js
 var concat = require('level-concat-iterator')
-var leveldown = require('leveldown')
+var level = require('level')
 
-var db = leveldown('DB')
-
-db.open(function () {
-  db.put('foo', 'bar', function () {
+level('DB', function (err, db) {
+  db.put('foo', 'bar', function (err) {
     concat(db.iterator(), function (err, data) {
       console.log(data)
     })

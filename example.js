@@ -1,8 +1,7 @@
-var leveldown = require('leveldown')
+var level = require('level')
 var concat = require('.')
 
-var db = leveldown('DB')
-db.open(function (err) {
+level('DB', function (err, db) {
   if (err) throw err
   db.put('foo', 'bar', function (err) {
     if (err) throw err
