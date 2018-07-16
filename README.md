@@ -7,6 +7,7 @@
 ![Node version](https://img.shields.io/node/v/level-concat-iterator.svg)
 [![Travis](https://img.shields.io/travis/Level/concat-iterator.svg)](http://travis-ci.org/Level/concat-iterator)
 [![dependencies](https://david-dm.org/Level/level-concat-iterator.svg)](https://david-dm.org/level/level-concat-iterator)
+[![Coverage Status](https://coveralls.io/repos/github/Level/concat-iterator/badge.svg)](https://coveralls.io/github/Level/concat-iterator)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![npm](https://img.shields.io/npm/dm/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)
 
