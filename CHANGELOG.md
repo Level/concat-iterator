@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 2.0.0 - 2018-06-27
+## [2.0.0] - 2018-06-27
 
 ### Changed
 * Detect end by checking key and value (@vweevers)
