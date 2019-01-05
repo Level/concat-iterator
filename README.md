@@ -44,6 +44,6 @@ See the [`contribution guide`](https://github.com/Level/community/blob/master/CO
 
 ## License
 
-[MIT](./LICENSE.md) © 2018-present `level-concat-iterator` [Contributors](./CONTRIBUTORS.md).
+[MIT](LICENSE.md) © 2018-present [Contributors](CONTRIBUTORS.md).
 
 [level-badge]: http://leveldb.org/img/badge.svg
