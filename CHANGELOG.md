@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [Unreleased][unreleased]
 
 ## [2.0.0] - 2018-06-27
 
@@ -23,6 +23,6 @@
 
 :seedling: Initial release.
 
-[Unreleased]: https://github.com/level/level/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/level/level/compare/v2.0.0...HEAD
 
 [2.0.0]: https://github.com/level/level/compare/v1.0.0...v2.0.0
