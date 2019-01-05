@@ -2,10 +2,18 @@
   "name": "level-concat-iterator",
   "version": "2.0.0",
   "description": "Concatenate items from an iterator into an array.",
+  "author": "Lars-Magnus Skog <ralphtheninja@riseup.net>",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "standard && nyc node test",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "nyc": "^12.0.2",
+    "standard": "^11.0.1",
+    "tape": "^4.9.1"
   },
   "repository": {
     "type": "git",
@@ -17,14 +25,6 @@
     "iterator",
     "array"
   ],
-  "author": "Lars-Magnus Skog <ralphtheninja@riseup.net>",
-  "license": "MIT",
-  "devDependencies": {
-    "coveralls": "^3.0.2",
-    "nyc": "^12.0.2",
-    "standard": "^11.0.1",
-    "tape": "^4.9.1"
-  },
   "engines": {
     "node": ">=6"
   }
