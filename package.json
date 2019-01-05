@@ -17,6 +17,9 @@
     "standard": "^11.0.1",
     "tape": "^4.9.1"
   },
+  "hallmark": {
+    "community": "level-community"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Level/concat-iterator.git"
