@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Level/concat-iterator",
   "keywords": [
+    "level",
     "concatenate",
     "iterator",
     "array"
