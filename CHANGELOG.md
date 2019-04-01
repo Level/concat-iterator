@@ -2,7 +2,7 @@
 
 ## [Unreleased][unreleased]
 
-## [3.0.0] - 2019-03-31
+## [2.0.1] - 2019-04-01
 
 ### Changed
 
@@ -15,7 +15,7 @@
 
 ### Removed
 
-- Remove node 9 ([`0347b82`](https://github.com/Level/concat-iterator/commit/0347b82)) ([**@ralphtheninja**](https://github.com/ralphtheninja))
+- Remove node 9 from travis ([`0347b82`](https://github.com/Level/concat-iterator/commit/0347b82)) ([**@ralphtheninja**](https://github.com/ralphtheninja))
 
 ## [2.0.0] - 2018-06-27
 
@@ -38,8 +38,8 @@
 
 :seedling: Initial release.
 
-[unreleased]: https://github.com/Level/concat-iterator/compare/v3.0.0...HEAD
+[unreleased]: https://github.com/Level/concat-iterator/compare/v2.0.1...HEAD
 
-[3.0.0]: https://github.com/Level/concat-iterator/compare/v2.0.0...v3.0.0
+[2.0.1]: https://github.com/Level/concat-iterator/compare/v2.0.0...v2.0.1
 
 [2.0.0]: https://github.com/Level/concat-iterator/compare/v1.0.0...v2.0.0
