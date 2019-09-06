@@ -1,7 +1,5 @@
 # Changelog
 
-## [Unreleased][unreleased]
-
 ## [2.0.1] - 2019-04-01
 
 ### Changed
@@ -37,8 +35,6 @@
 ## 1.0.0 - 2018-06-24
 
 :seedling: Initial release.
-
-[unreleased]: https://github.com/Level/concat-iterator/compare/v2.0.1...HEAD
 
 [2.0.1]: https://github.com/Level/concat-iterator/compare/v2.0.0...v2.0.1
 
