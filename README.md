@@ -61,6 +61,6 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 ## License
 
-[MIT](LICENSE.md) © 2018-present [Contributors](CONTRIBUTORS.md).
+[MIT](LICENSE.md) © 2018-present Lars-Magnus Skog and contributors.
 
 [level-badge]: https://leveljs.org/img/badge.svg

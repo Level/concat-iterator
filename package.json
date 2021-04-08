@@ -13,6 +13,12 @@
     "dependency-check": "dependency-check . test.js",
     "prepublishOnly": "npm run dependency-check"
   },
+  "files": [
+    "index.js",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "UPGRADING.md"
+  ],
   "devDependencies": {
     "airtap": "^4.0.3",
     "airtap-playwright": "^1.0.1",
