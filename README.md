@@ -15,14 +15,18 @@
 ## Usage
 
 ```js
-var concat = require('level-concat-iterator')
-var level = require('level')
+const concat = require('level-concat-iterator')
+const level = require('level')
 
-level('DB', function (err, db) {
-  db.put('foo', 'bar', function (err) {
-    concat(db.iterator(), function (err, data) {
-      console.log(data)
-    })
+const db = level('./db')
+
+db.put('foo', 'bar', function (err) {
+  if (err) throw err
+
+  concat(db.iterator(), function (err, data) {
+    if (err) throw err
+
+    console.log(data)
   })
 })
 ```
