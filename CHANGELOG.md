@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.0] - 2021-04-08
+
+### Changed
+
+- **Breaking:** modernize syntax and bump standard ([`dd37269`](https://github.com/Level/concat-iterator/commit/dd37269)) ([Level/community#98](https://github.com/Level/community/issues/98)) (Vincent Weevers).
+
 ## [2.0.1] - 2019-04-01
 
 ### Changed
@@ -35,6 +41,8 @@
 ## 1.0.0 - 2018-06-24
 
 :seedling: Initial release.
+
+[3.0.0]: https://github.com/Level/concat-iterator/compare/v2.0.1...v3.0.0
 
 [2.0.1]: https://github.com/Level/concat-iterator/compare/v2.0.0...v2.0.1
 
