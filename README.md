@@ -6,7 +6,7 @@
 [![npm](https://img.shields.io/npm/v/level-concat-iterator.svg?label=&logo=npm)](https://www.npmjs.com/package/level-concat-iterator)
 [![Node version](https://img.shields.io/node/v/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)
 [![Travis](https://img.shields.io/travis/com/Level/concat-iterator.svg?logo=travis&label=)](https://travis-ci.com/Level/concat-iterator)
-[![Coverage Status](https://coveralls.io/repos/github/Level/concat-iterator/badge.svg)](https://coveralls.io/github/Level/concat-iterator)
+[![codecov](https://codecov.io/gh/Level/concat-iterator/branch/master/graph/badge.svg)](https://codecov.io/gh/Level/concat-iterator)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![npm](https://img.shields.io/npm/dm/level-concat-iterator.svg?label=dl)](https://www.npmjs.com/package/level-concat-iterator)
 [![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
