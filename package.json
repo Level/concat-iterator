@@ -8,7 +8,7 @@
   "scripts": {
     "test": "standard && hallmark && nyc node test",
     "test-browsers-local": "airtap --coverage test.js",
-    "coverage": "nyc report -r lcov",
+    "coverage": "nyc report -r lcovonly",
     "hallmark": "hallmark --fix",
     "dependency-check": "dependency-check . test.js",
     "prepublishOnly": "npm run dependency-check"
