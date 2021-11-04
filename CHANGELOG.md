@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.0] - 2021-11-04
+
+### Added
+
+- Support promises and `abstract-level` ([`3074af8`](https://github.com/Level/concat-iterator/commit/3074af8)) (Vincent Weevers)
+
 ## [3.0.0] - 2021-04-08
 
 _If you are upgrading: please see [`UPGRADING.md`](UPGRADING.md)._
@@ -45,6 +51,8 @@ _If you are upgrading: please see [`UPGRADING.md`](UPGRADING.md)._
 ## [1.0.0] - 2018-06-24
 
 :seedling: Initial release.
+
+[3.1.0]: https://github.com/Level/concat-iterator/releases/tag/v3.1.0
 
 [3.0.0]: https://github.com/Level/concat-iterator/releases/tag/v3.0.0
 

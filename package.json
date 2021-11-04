@@ -1,6 +1,6 @@
 {
   "name": "level-concat-iterator",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Concatenate entries from an iterator into an array.",
   "author": "Lars-Magnus Skog <ralphtheninja@riseup.net>",
   "license": "MIT",
