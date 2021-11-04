@@ -2,6 +2,8 @@
 
 ## [3.0.0] - 2021-04-08
 
+_If you are upgrading: please see [`UPGRADING.md`](UPGRADING.md)._
+
 ### Changed
 
 - **Breaking:** modernize syntax and bump standard ([`dd37269`](https://github.com/Level/concat-iterator/commit/dd37269)) ([Level/community#98](https://github.com/Level/community/issues/98)) (Vincent Weevers).
@@ -23,6 +25,8 @@
 
 ## [2.0.0] - 2018-06-27
 
+_If you are upgrading: please see [`UPGRADING.md`](UPGRADING.md)._
+
 ### Changed
 
 - Detect end by checking key and value ([**@vweevers**](https://github.com/vweevers))
@@ -38,12 +42,14 @@
 - Add `homepage` and `repository` to `package.json` ([**@ralphtheninja**](https://github.com/ralphtheninja))
 - Add `UPGRADING.md` ([**@ralphtheninja**](https://github.com/ralphtheninja))
 
-## 1.0.0 - 2018-06-24
+## [1.0.0] - 2018-06-24
 
 :seedling: Initial release.
 
-[3.0.0]: https://github.com/Level/concat-iterator/compare/v2.0.1...v3.0.0
+[3.0.0]: https://github.com/Level/concat-iterator/releases/tag/v3.0.0
 
-[2.0.1]: https://github.com/Level/concat-iterator/compare/v2.0.0...v2.0.1
+[2.0.1]: https://github.com/Level/concat-iterator/releases/tag/v2.0.1
 
-[2.0.0]: https://github.com/Level/concat-iterator/compare/v1.0.0...v2.0.0
+[2.0.0]: https://github.com/Level/concat-iterator/releases/tag/v2.0.0
+
+[1.0.0]: https://github.com/Level/concat-iterator/releases/tag/v1.0.0

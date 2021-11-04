@@ -1,16 +1,15 @@
 # level-concat-iterator
 
-> Concatenate entries from an iterator into an array.
+**Concatenate entries from an iterator into an array.**
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
-[![npm](https://img.shields.io/npm/v/level-concat-iterator.svg?label=&logo=npm)](https://www.npmjs.com/package/level-concat-iterator)
+[![npm](https://img.shields.io/npm/v/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)
 [![Node version](https://img.shields.io/node/v/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)
-[![Test](https://github.com/Level/concat-iterator/actions/workflows/test.yml/badge.svg)](https://github.com/Level/concat-iterator/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/Level/concat-iterator/branch/master/graph/badge.svg)](https://codecov.io/gh/Level/concat-iterator)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![npm](https://img.shields.io/npm/dm/level-concat-iterator.svg?label=dl)](https://www.npmjs.com/package/level-concat-iterator)
-[![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
-[![Sponsors on Open Collective](https://opencollective.com/level/sponsors/badge.svg?color=orange)](#sponsors)
+[![Test](https://img.shields.io/github/workflow/status/Level/concat-iterator/Test?label=test)](https://github.com/Level/concat-iterator/actions/workflows/test.yml)
+[![Coverage](https://img.shields.io/codecov/c/github/Level/supports?label=&logo=codecov&logoColor=fff)](https://codecov.io/gh/Level/supports)
+[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript&logoColor=fff)](https://standardjs.com)
+[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)
+[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective&logoColor=fff)](https://opencollective.com/level)
 
 ## Usage
 
@@ -39,7 +38,7 @@ await db.put('foo', 'bar')
 const entries = await concat(db.iterator())
 ```
 
-**If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md).
+_If you are upgrading: please see [`UPGRADING.md`](UPGRADING.md)._
 
 ## API
 
@@ -57,18 +56,10 @@ See the [Contribution Guide](https://github.com/Level/community/blob/master/CONT
 
 ## Donate
 
-To sustain [`Level`](https://github.com/Level) and its activities, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level) and [npm](https://www.npmjs.com/) packages. 💖
-
-### Backers
-
-[![Open Collective backers](https://opencollective.com/level/backers.svg?width=890)](https://opencollective.com/level)
-
-### Sponsors
-
-[![Open Collective sponsors](https://opencollective.com/level/sponsors.svg?width=890)](https://opencollective.com/level)
+Support us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.
 
 ## License
 
-[MIT](LICENSE.md) © 2018-present Lars-Magnus Skog and contributors.
+[MIT](LICENSE)
 
 [level-badge]: https://leveljs.org/img/badge.svg
