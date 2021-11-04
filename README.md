@@ -1,6 +1,6 @@
 # level-concat-iterator
 
-> Concatenate items from an iterator into an array.
+> Concatenate entries from an iterator into an array.
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![npm](https://img.shields.io/npm/v/level-concat-iterator.svg?label=&logo=npm)](https://www.npmjs.com/package/level-concat-iterator)
@@ -23,21 +23,29 @@ const db = level('./db')
 db.put('foo', 'bar', function (err) {
   if (err) throw err
 
-  concat(db.iterator(), function (err, data) {
+  concat(db.iterator(), function (err, entries) {
     if (err) throw err
 
-    console.log(data)
+    // [{ key: 'foo', value: 'bar' }]
+    console.log(entries)
   })
 })
+```
+
+With promises:
+
+```js
+await db.put('foo', 'bar')
+const entries = await concat(db.iterator())
 ```
 
 **If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md).
 
 ## API
 
-### `concat(iterator, cb)`
+### `concat(iterator[, callback])`
 
-Takes an `abstract-leveldown` compatible `iterator` as first parameter and calls back with an array of keys and values. Calls back with an error if `iterator.next(cb)` or `iterator.end(cb)` errors.
+Takes an `abstract-leveldown` compatible `iterator` as first parameter and calls the `callback` with an array of entries, where each entry is an object in the form `{ key, value }`. Calls the `callback` with an error if `iterator.next()` or `iterator.end()` errors. If no callback is provided, a promise is returned.
 
 ## Contributing
 

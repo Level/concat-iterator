@@ -1,7 +1,7 @@
 {
   "name": "level-concat-iterator",
   "version": "3.0.0",
-  "description": "Concatenate items from an iterator into an array.",
+  "description": "Concatenate entries from an iterator into an array.",
   "author": "Lars-Magnus Skog <ralphtheninja@riseup.net>",
   "license": "MIT",
   "main": "index.js",
@@ -19,6 +19,9 @@
     "LICENSE.md",
     "UPGRADING.md"
   ],
+  "dependencies": {
+    "catering": "^2.1.0"
+  },
   "devDependencies": {
     "airtap": "^4.0.3",
     "airtap-playwright": "^1.0.1",

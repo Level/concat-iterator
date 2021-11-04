@@ -6,9 +6,9 @@ const db = level('./db')
 db.put('foo', 'bar', function (err) {
   if (err) throw err
 
-  concat(db.iterator(), function (err, data) {
+  concat(db.iterator(), function (err, entries) {
     if (err) throw err
 
-    console.log(data)
+    console.log(entries)
   })
 })

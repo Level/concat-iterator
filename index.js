@@ -1,17 +1,25 @@
 'use strict'
 
-module.exports = function (iterator, cb) {
-  const data = []
-  const next = function () {
-    iterator.next(function (err, key, value) {
-      if (err || (key === undefined && value === undefined)) {
-        return iterator.end(function (err2) {
-          cb(err || err2, data)
-        })
-      }
-      data.push({ key, value })
-      next()
-    })
+const { fromCallback } = require('catering')
+const kPromise = Symbol('promise')
+
+module.exports = function (iterator, callback) {
+  callback = fromCallback(callback, kPromise)
+
+  // Use close() method of abstract-level or end() of abstract-leveldown
+  const close = typeof iterator.close === 'function' ? 'close' : 'end'
+  const entries = []
+
+  const onnext = function (err, key, value) {
+    if (err || (key === undefined && value === undefined)) {
+      return iterator[close](function (err2) {
+        callback(err || err2, entries)
+      })
+    }
+    entries.push({ key, value })
+    iterator.next(onnext)
   }
-  next()
+
+  iterator.next(onnext)
+  return callback[kPromise]
 }
