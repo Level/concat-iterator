@@ -2,6 +2,8 @@
 
 **Concatenate entries from an iterator into an array.**
 
+> :pushpin: This module will soon be [deprecated](https://github.com/Level/community/issues/113), because its functionality is included in [`abstract-level`](https://github.com/Level/abstract-level).
+
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![npm](https://img.shields.io/npm/v/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)
 [![Node version](https://img.shields.io/node/v/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)
